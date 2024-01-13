@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/about_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/support"
+            android:textSize="@dimen/big_text_size" />
+
+        <LinearLayout
+            android:id="@+id/about_support_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:background="@drawable/section_holder_stroke"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/about_email_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bottom_corners"
+                android:padding="@dimen/medium_margin">
+
+                <ImageView
+                    android:id="@+id/about_email_icon"
+                    android:layout_width="@dimen/normal_icon_size"
+                    android:layout_height="@dimen/normal_icon_size"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/medium_margin"
+                    android:src="@drawable/ic_mail_vector" />
+
+                <org.scribe.views.MyTextView
+                    android:id="@+id/about_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/about_email_icon"
+                    android:layout_alignBottom="@+id/about_email_icon"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:layout_marginEnd="@dimen/normal_margin"
+                    android:layout_toEndOf="@+id/about_email_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_email"
+                    android:textSize="@dimen/bigger_text_size" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/about_help_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/help_us"
+            android:textSize="@dimen/big_text_size" />
+
+        <LinearLayout
+            android:id="@+id/about_help_us_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:background="@drawable/section_holder_stroke"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/about_invite_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_background"
+                android:padding="@dimen/medium_margin">
+
+                <ImageView
+                    android:id="@+id/about_invite_icon"
+                    android:layout_width="@dimen/normal_icon_size"
+                    android:layout_height="@dimen/normal_icon_size"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/medium_margin"
+                    android:src="@drawable/ic_add_person_vector" />
+
+                <org.scribe.views.MyTextView
+                    android:id="@+id/about_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/about_invite_icon"
+                    android:layout_alignBottom="@+id/about_invite_icon"
+                    android:layout_marginStart="@dimen/normal_margin"
+                    android:layout_marginEnd="@dimen/normal_margin"
+                    android:layout_toEndOf="@+id/about_invite_icon"
+                    android:gravity="center_vertical"
+                    android:text="@string/invite_friends"
+                    android:textSize="@dimen/bigger_text_size" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

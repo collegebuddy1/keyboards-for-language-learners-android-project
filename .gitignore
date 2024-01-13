@@ -1,0 +1,20 @@
+# OS files
+##########
+.DS_Store
+
+# Android Studio files
+######################
+.idea
+*.iml
+
+# Gradle and build files
+########################
+.gradle
+local.properties
+*.aab
+/build
+/captures
+keystore.jks
+keystore.properties
+/app/src/proprietary/assets/pesdk_license
+/app/src/proprietary/assets/vesdk_license
